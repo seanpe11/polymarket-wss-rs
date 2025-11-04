@@ -1,0 +1,20 @@
+[package]
+name = "polymarket-wss-rs"
+version = "0.1.0"
+authors = ["Sean Pe <sean.m.s.pe@gmail.com>"]
+edition = "2024"
+description = "Polymarket Rust implementation of a WSS client with authentication"
+license = "MIT"
+repository = "https://github.com/seanpe11/polymarket-wss-rs"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = "0.24"
+reqwest = { version = "0.12", features = ["json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+hmac = "0.12"
+sha2 = "0.10"
+base64 = "0.22"
+thiserror = "2"
+
