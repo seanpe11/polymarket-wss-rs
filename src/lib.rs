@@ -4,6 +4,7 @@
 //! for Polymarket's CLOB (Central Limit Order Book) API.
 
 pub mod auth;
+pub mod client;
 pub mod error;
 pub mod types;
 
